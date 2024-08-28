@@ -1,4 +1,4 @@
-FROM node:alpine as todo-app-build
+FROM node as todo-app-build
 
 WORKDIR /client
 
