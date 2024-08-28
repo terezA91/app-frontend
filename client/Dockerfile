@@ -12,6 +12,8 @@ COPY ./src ./src
 
 ENV REACT_APP_baseAPIURL=<backend-app-service-ip>:<port>
 
+RUN yarn install
+
 RUN yarn build
 
 FROM nginx:latest
